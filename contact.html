@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Lucky's Burgers and Fries</h1>
+        </header>
+
+        <nav>     
+            <hr>
+            <p><a class="active" href="index.html">Home</a> </p>
+            <p><a href="menu.html">Menu</a> </p>
+            <p><a href="contact.html">Contact Us</a></p> 
+            <hr />    
+        </nav>
+    
+    <div class="form">
+        <form action ="form.txt" method="POST">
+            <!--textboxes-->
+            <label for="name">Name:  </label>
+            <input type="text" name="name" required/><br/>
+            <label for="name">Email:  </label>
+            <input type="text" name="email" required/><br/>
+            <label for="phone">Phone:  </label>
+            <input type="text" name="phone" required/><br/>
+            
+            <!--dropdown menu-->
+            <label id="r2" for="reason">Reason for Inquiry:  </label>
+            <select id="reason" name="reason">
+                <option value="default" selected>Catering (default)</option>
+                <option value="private-party">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>                
+            </select><br/>
+            
+            <!--textarea-->
+            <label for="info" id="info-label">Additional Info:  </label>
+            <textarea name="additionalInfo" id="additionalInfo" cols="30" rows="10"></textarea><br/>
+            
+            <!--yes/no radio label-->
+            <label id="radio-label" for="restaurantVisit">Have you been to Lucky's Burgers and Fries?</label>
+            <div class = "radioInput">
+                
+                <input id="option1" type="radio" name="answer" value="NO" checked />No
+                <input id="option2" type="radio" name="answer" value="YES"/>Yes<br/>                   
+            </div>    
+            
+            <!--checkboxes-->
+            <label id="checkbox-label" for="best-days">Best days to contact you?</label>
+            <div class="checkbox">
+                <input type="checkbox" name="day-choice" value="Monday">M
+                <input type="checkbox" name="day-choice" value="Tuesday">T
+                <input type="checkbox" name="day-choice" value="Wednesday">W
+                <input type="checkbox" name="day-choice" value="Thursday">Th
+                <input type="checkbox" name="day-choice" value="Friday">F
+            </div><br/>
+
+            <input type="submit" value="Send Request"/>
+        </form>
+    </div>
+    </body>
+    
+    <footer>
+            <hr />
+            <p>3136 Gazelle Ave, Dallas, Texas, 75201</p>
+            <p>(214)555-0123</p>
+    </footer>
+</html>
+ 

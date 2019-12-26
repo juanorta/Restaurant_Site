@@ -23,7 +23,7 @@ h1{
 
 
  footer {
-    
+    margin-top: 300px;
     text-align: center;
 }
 
@@ -32,11 +32,88 @@ h1{
 .menu{
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    
+
 }
 
 .item{
     text-align: center;
     font-size: 20px;
     padding: 10px;
+}
+
+.form{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* controls text label and input */
+label, input {
+    margin-bottom: 25px;
+    width: 250px;
+    margin-right: 10px;
+}
+/*controls dropdown label*/
+#r2{
+    margin-left: -91px;
+    padding: 75px;
+}
+/* controls dropdown box */
+#reason{
+    position: relative;
+    left: -76px;
+    text-align: left;
+    width: 257px;
+    margin-bottom: 25px;
+}
+
+#info-label{
+     vertical-align: top;
+     margin-left: -70px;
+    
+}
+
+#additionalInfo{
+    
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+
+/*controls no and yes buttons along with their text*/
+.radioInput{
+    display: inline;
+    padding: 10px;
+    
+}
+
+#radio-label{
+    margin-left: -350px;
+}
+
+input[type="radio"]{
+    margin-right: -175px;
+    width: 200px;
+   
+}
+
+#option2{
+    margin-left: 50px;
+}
+
+#checkbox-label{
+    margin-right: 8px;
+    margin-bottom: ;
+}
+
+.checkbox{
+    display: inline;
+    margin-right: 115px;
+
+}
+
+input[type="checkbox"]{
+    margin-right:-225px;
+    margin-left: 15px;
+    
 }
