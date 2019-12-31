@@ -1,119 +1,52 @@
-/* navbar and footer css */
-hr{
-    width:100%
+/* css to style header, footer, and navbar buttons */
+header{
+  padding:10px;
+  font-family: 'Oleo Script';
+  font-weight: 200;
+  background-color: rgb(73, 73, 73);
+  color: whitesmoke;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(107, 148, 96);
 }
 
-p a {
-    float:left;
-    text-align: center;
-    padding: 7px 16px 15px;
+body{
+    background: rgb(212, 213, 213);
+}
+
+/*nav button styling*/
+.btn{
+    
+    font-family: 'Oleo Script';
+    background-color: rgb(107, 148, 96);
+    font-size: 20px;
+    
+    color: whitesmoke
+    
+}
+
+.nav-item{
+
+    margin-left: -10px;
+    margin-right: 20px;
+}
+
+.btn:hover{
+   
+    font-family: 'Oleo Script';
+    font-weight: 700;
+    color:green
 }
 
 h1{
     text-align: center;
 }
 
-.logo-description{
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-}
-
-
- footer {
-    margin-top: 300px;
+footer {
+    margin-top: 750px;
     text-align: center;
-}
-
-/* menu.html css*/
-
-.menu{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-
-}
-
-.item{
-    text-align: center;
+    font-family: 'Oleo Script';
     font-size: 20px;
-    padding: 10px;
-}
-
-.form{
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-}
-
-/* controls text label and input */
-label, input {
-    margin-bottom: 25px;
-    width: 250px;
-    margin-right: 10px;
-}
-/*controls dropdown label*/
-#r2{
-    margin-left: -91px;
-    padding: 75px;
-}
-/* controls dropdown box */
-#reason{
-    position: relative;
-    left: -76px;
-    text-align: left;
-    width: 257px;
-    margin-bottom: 25px;
-}
-
-#info-label{
-     vertical-align: top;
-     margin-left: -70px;
-    
-}
-
-#additionalInfo{
-    
-    width: 250px;
-    margin-bottom: 25px;
-}
-
-
-/*controls no and yes buttons along with their text*/
-.radioInput{
-    display: inline;
-    padding: 10px;
-    
-}
-
-#radio-label{
-    margin-left: -350px;
-}
-
-input[type="radio"]{
-    margin-right: -175px;
-    width: 200px;
-   
-}
-
-#option2{
-    margin-left: 50px;
-}
-
-#checkbox-label{
-    margin-right: 8px;
-    margin-bottom: ;
-}
-
-.checkbox{
-    display: inline;
-    margin-right: 115px;
-
-}
-
-input[type="checkbox"]{
-    margin-right:-225px;
-    margin-left: 15px;
-    
+    background-color: rgb(73, 73, 73);
+    color: whitesmoke;
+    padding: 0px 0px 120px;
 }

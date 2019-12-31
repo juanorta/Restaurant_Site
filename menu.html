@@ -1,93 +1,237 @@
  <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">     
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/restaurantStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--will display if user does not have javascript enabled-->
+        <noscript>This is best viewed with JavaScript enabled</noscript>
+        
         <title>Menu</title>
+
+        <style>
+
+            .jumbotron{
+                margin-bottom: 50px;
+            }
+
+            /* controls the container around the columns */
+            .container-fluid{
+                text-align: center
+                
+            }
+        
+            .row{
+                margin: auto;
+                margin-bottom: 60px;
+                margin-top: 100px;
+            }
+
+            h3{
+                font-family: 'Oleo Script';
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            /*table formatting. adjusting margins, paddings, and fonts*/
+
+            table{
+                margin: auto;
+                border: 1px solid rgb(107, 148, 96);
+                margin-bottom: -300px;
+    
+            }
+
+            tr{
+                height:70px;
+            
+            }
+
+            td{
+                padding: 5px 0px 5px 10px;
+                color: black;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            caption{
+                caption-side: top;
+                text-align: center;
+                font-family: 'Oleo Script';
+                font-size: 35px;
+                color: black;
+                
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: rgb(50, 102, 36);
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: rgb(212, 213, 213);
+                
+            }
+           
+        </style>
+
     </head>
 
     <body>
         <header>
-            <h1>Lucky's Burgers and Fries</h1>
-        <header>
+            <h1>Lucky's Burgers & Fries</h1>
+        </header>
         
         <!--nav tag to define the major links to different pages-->
-        <nav>     
-                <hr>
-                <p><a class="active" href="index.html">Home</a> </p>
-                <p><a href="menu.html">Menu</a> </p>
-                <p><a href="contact.html">Contact Us</a></p> 
-                <hr />    
-        </nav>
-        <div class="menu">
-            <div class="item">
-                <p>
-                <strong>Burger and Fries</strong><br>
-                    An American Classic!<br>
-                    Your choice - with or without cheese<br>
-                    Pickle, onion, tomato, and lettuce<br>
-                    Served with out famous thick cut<br>
-                    french fries<br>
-                    $7.95
-                </p>
-            </div>
-
-            <div class="item">
-                    <p>
-                    <strong>Hot Dog and Chips</strong><br>
-                        A Summer Classic!<br>
-                        Your choice - white or wheat bun<br>
-                        Relish, mustard, and ketchup<br>
-                        Served with our house-made chips<br>
-                        $7.95
-                    </p>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(73,73,73);
+        border-bottom-style: solid; border-bottom-color: rgb(107, 148, 96); ">
+                <div class="container-fluid" id="navbarNav">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item active">
+                      <a class="btn badge-pill" href="index.html"><i class="fa fa-fw fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn badge-pill" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn badge-pill" href="contact.html">Contact Us </a>
+                    </li>
+                  </ul>
                 </div>
+              </nav>
 
-            <div class="item">
-                    <p>
-                    <strong>Italian Sausage and Peppers</strong><br>
-                        An All-Time Favorite!<br>
-                        Your choice - mild or spicy Cole Slaw<br>
-                        Served with garlic mashers<br>
-                        $10.95
-                    </p>
-            </div>
+        <!--carousel-->
+       <div class="jumbotron-fluid">
+                <div id="my-slide" class="carousel slide" data-ride="carousel">
+                    <!--indicators dots-->
+                    <ol class="carousel-indicators" class="active">
+                        <li data-target="#my-slide" data-slide-to="0"></li>
+                        <li data-target="#my-slide" data-slide-to="1"></li>
+                        <li data-target="#my-slide" data-slide-to="2"></li>
+                    </ol>
 
-            <div class="item">
-                    <p>
-                    <strong>Tenderloin Sandwich and Chips</strong><br>
-                        Really Hits the Spot!<br>
-                        Plain or Sesame Seed Bun<br>
-                        Pickle, onion, tomato, and lettuce<br>
-                        Served with out house-made chips<br>
-                        $8.95
-                    </p>
-            </div>
-
-            <div class="item">
-                    <p>
-                    <strong>House Salad</strong><br>
-                        On the Lighter Side<br>
-                        Your choice - with or without cheese<br>
-                        Iceberg lettuce, tomatoes, peppers<br>
-                        Thousand Island or Ranch<br>
-                        DressingServed with a dinner roll<br>
-                        $6.95
-                    </p>
-            </div>
-
-            <div class="item">
-                    <p>
-                    <strong>Brisket Sandwich and Fries</strong><br>
-                        A Taste of Texas!<br>
-                        Smoked Brisket on thick-cut<br>
-                        Texas Toast<br>
-                        Cole Slaw<br>
-                        Served with our famous thick-cut<br>
-                        french fries<br>
-                        $7.95
-                    </p>
-            </div>
+                    <!--wrapper for slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="images/brick.jpg" alt="brick background" width="100%" height="300px">
+                        <div class="carousel-caption" style="background-position: center center;">
+                            <h1>Come visit our new location in Plano!</h1>
+                            <h3>Opens April 2020</h3>
+                                 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/leaves.jpg" alt="fall leaves" width="100%" height="300px">
+                            <div class="carousel-caption" style="background-position: center center;">
+                                <h1>Check Out Our Fall Menu!</h1>
+                                <h3>Here for a limited time only</h3>
+                            </div>
+                    </div>
+                        <div class="carousel-item">
+                                <img src="images/brew4.jpg" alt="coffee beans" width="100%" height="300px">
+                                <div class="carousel-caption" style="background-position: center center;">
+                                    <h1>Brew of the Month:</h1>
+                                    <h3>SG Special Brew</h3>
+                                </div>
+                        </div>       
+                    </div>
+                </div>
         </div>
+
+
+          
+        <!---using bootstrap col classes to format menu items.
+        2 rows of 3 columns
+        -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Burger and Fries</h3>
+                    <p>An American Classic!<br>
+                        Your choice - with or without cheese<br>
+                        Pickle, onion, tomato, and lettuce<br>
+                        Served with our famous thick cut<br>
+                        french fries<br>
+                        $7.95</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Hot Dog and Chips</h3>
+                        <p>A Summer Classic!<br>
+                            Your choice - white or wheat bun<br>
+                            Relish, mustard, and ketchup<br>
+                            Served with our house-made chips<br>
+                            $7.95</p>
+                </div>
+                <div class="col-md-4">
+                            <h3>Italian Sausage and Peppers</h3>
+                            <p>An All-Time Favorite!!<br>
+                            Your choice - mild or spicy Cole Slaw<br>
+                            Served with garlic mashers<br>
+                            $10.95</p>	
+                </div>	
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                        <h3>Tenderloin Sandwich and Chips</h3>
+                            <p>Really Hits the Spot!<br>
+                            Plain or Sesame Seed Bun<br>
+                            Pickle, onion, tomato, and lettuce<br>
+                            Served with our house-made chips<br>
+                            $8.95</p>
+                </div>
+                <div class="col-md-4">
+                        <h3>House Salad</h3>
+                            <p>On the Lighter Side<br>
+                            Your choice - with or without cheese<br>
+                            Iceberg lettuce, tomatoes, peppers<br>
+                            Thousand Island or Ranch<br> 
+                            DressingServed with a dinner roll<br>
+                            $6.95</p>
+                </div>
+                <div class="col-md-4">
+                        <h3>Brisket Sandwich and Fries</h3>
+                            <p>An Taste of Texas!<br>
+                            Smoked Brisket on thick-cut<br>Texas Toast<br>
+                            Cole Slaw<br>
+                            Served with our famous thick cut<br>french fries<br>
+                            $7.95</p>
+                </div>
+            </div>  
+        </div>
+        
+         <!--inserting elements into table-->  
+        <table border="1" width="65%" style=>
+            <caption>Beverages</caption>
+                <tr> 
+                    <td>Root Beer</td> 
+                        <td>$3.00</td> 
+                </tr> 
+                <tr> 
+                   <td>Bottled Water</td> 
+                        <td>$1.25</td> 
+ 
+                </tr> 
+                <tr> 
+                    <td>Lemonade</td> 
+                    <td>$1.00</td> 
+                </tr>
+                <tr> 
+                    <td>Iced Tea</td> 
+                    <td>$1.25</td> 
+                </tr> 
+        </table>
+
+
     </body>
 
     <footer>
@@ -95,4 +239,6 @@
             <p>3136 Gazelle Ave, Dallas, Texas, 75201</p>
             <p>(214)555-0123</p>
     </footer>
+
+
 </html>
